@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link type="image/png" sizes="16x16" rel="icon" href="icons8-books-16.png">
+    <title> IPM </title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-pyramid'></i>
+                <div class="logo_name"> IPM </div>
+            </div>
+            <i class='bx bx-menu bx-sm' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search' ></i>
+                <form action="https://www.google.com/search" target="_blank">
+                    <input type="txt" name="q" placeholder="Google search...">
+                </form>
+            </li>
+            <li>
+                <a href="IPM.html">
+                    <i class='bx bx-home bx-sm'></i>
+                    <span class="links_name"> Home </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://ctp.di.fct.unl.pt/miei/ipm/" target="_blank">
+                    <i class='bx bx-laptop bx-sm'></i>
+                    <span class="links_name"> IPM site </span>
+                </a>
+            </li>
+            <li>
+                <a href="App/build/index.html" target="_blank">
+                    <i class='bx bxs-widget bx-sm'></i>
+                    <span class="links_name"> Project </span>
+                </a>
+            </li>
+            <li>
+                <a href="Reports/Reports.html">
+                    <i class='bx bx-pie-chart-alt-2 bx-sm'></i>
+                    <span class="links_name"> Reports </span>
+                </a>
+            </li>
+            <li>
+                <a href="Assignments/Assignments.html">
+                    <i class='bx bx-folder-open bx-sm'></i>
+                    <span class="links_name"> Assignments </span>
+                </a>
+            </li>
+        </ul>        
+    </div>
+    <div class="home_content"> 
+        <div class="text">
+            <h1 style="color: rgb(255,165,0);"> Interacção Pessoa-Máquina <h1>
+            <p style="font-size: 20px;"><i class='bx bx-file'></i> Lab Class nº2, Group 11 </p>
+            <h4><i class='bx bx-group'></i> Group members </h4>
+            <ul class="group_members" style="margin-left: 30px; font-size: 15px;">
+                <li>57502, David Delgadinho</li>
+                <li>57968, Jaime Saramago</li>
+                <li>57655, Ricardo Romão</li>
+                <li>58459, Tiago Henriques</li>
+            </ul>
+        </div>   
+    </div>  
+    <script>
+            // side bar
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let searchBtn = document.querySelector(".bx-search");
+
+            btn.onmouseover = function(){
+                sidebar.classList.toggle("active")
+            }
+            searchBtn.onclick = function(){
+                sidebar.classList.toggle("active")
+            }
+        </script>
+    </body>
+    </html>
