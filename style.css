@@ -250,6 +250,14 @@ ol {
     margin-left: 15px;
 }
 
+.home_content .text .projectTitle {
+    margin-top:15px; 
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
 .flip-card {
     float: left;
     margin-right: 30px;
