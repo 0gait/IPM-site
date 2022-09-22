@@ -157,6 +157,7 @@ body{
     align-items: center;
     background-size: 100% 100%;
     overflow: hidden;
+    background-color:lightgrey;
 }
 
 .home_content .text{
