@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     position: absolute;
     min-height: 100vh;
     width: 100%;
     color: black;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,12 +25,12 @@ body{
     transition: all 0.2s ease;
 }
 
-.sidebar.active{
+.sidebar.active {
     width: 240px;
 }
 
-.sidebar .logo_content .logo{
-    color: 	rgb(255,165,0);
+.sidebar .logo_content .logo {
+    color: rgb(255, 165, 0);
     display: flex;
     height: 50px;
     width: 100%;
@@ -40,24 +40,24 @@ body{
     transition: all 0.2s ease;
 }
 
-.sidebar.active .logo_content .logo{
+.sidebar.active .logo_content .logo {
     opacity: 1;
     pointer-events: none;
 }
 
-.logo_content .logo i{
-    font-size: 28px ;
+.logo_content .logo i {
+    font-size: 28px;
     margin-right: 5px;
 }
 
-.logo_content .logo .logo_name{
+.logo_content .logo .logo_name {
     font-size: 20px;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
-.sidebar #btn{
+.sidebar #btn {
     position: absolute;
-    color: rgb(255,165,0);
+    color: rgb(255, 165, 0);
     top: 6px;
     left: 50%;
     font-size: 20px;
@@ -68,15 +68,15 @@ body{
     transform: translateX(-50%);
 }
 
-.sidebar.active #btn{
+.sidebar.active #btn {
     left: 90%;
 }
 
-.sidebar ul{
+.sidebar ul {
     margin-top: 20px;
 }
 
-.sidebar ul li{
+.sidebar ul li {
     position: relative;
     height: 50px;
     width: 100%;
@@ -85,7 +85,7 @@ body{
     line-height: 50px;
 }
 
-.sidebar ul li input{
+.sidebar ul li input {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -93,14 +93,14 @@ body{
     top: 0;
     border-radius: 12px;
     outline: none;
-    border:none;
+    border: none;
     background: #103E81;
     padding-left: 50px;
     font-size: 18px;
     color: #fff;
 }
 
-.sidebar ul li .bx-search{
+.sidebar ul li .bx-search {
     position: absolute;
     z-index: 99;
     color: #fff;
@@ -108,47 +108,47 @@ body{
     transition: all 0.2s ease;
 }
 
-.sidebar ul li .bx-search:active{
+.sidebar ul li .bx-search:active {
     background: #fff;
     color: #103E81;
 
 }
 
-.sidebar ul li a{
-   color: #fff;
-   display: flex;
-   align-items: center;
-   text-decoration: none; 
-   transition: all 0.2s ease;
-   border-radius: 12px;
-   white-space: nowrap;
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-radius: 12px;
+    white-space: nowrap;
 }
 
-.sidebar ul li a:hover{
+.sidebar ul li a:hover {
     color: #002a52;
     background: #fff;
 }
 
-.sidebar ul li i{
+.sidebar ul li i {
     height: 50px;
     min-width: 50px;
     border-radius: 12px;
-    line-height: 50px;   
+    line-height: 50px;
     text-align: center;
 }
 
-.sidebar .links_name{
+.sidebar .links_name {
     opacity: 0;
     pointer-events: none;
     transition: all 0.2s ease;
 }
 
-.sidebar.active .links_name{
+.sidebar.active .links_name {
     opacity: 1;
     pointer-events: auto;
 }
 
-.home_content{
+.home_content {
     position: absolute;
     height: 100%;
     width: calc(100% - 78px);
@@ -157,95 +157,148 @@ body{
     align-items: center;
     background-size: 100% 100%;
     overflow: hidden;
-    background-color:lightgrey;
+    background-color: lightgrey;
 }
 
-.home_content .text{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   font-size: 25px;
-   font-weight: 500;
-   color: #fff;
-   margin: 12px; 
-   overflow-y: scroll;
+.home_content .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 12px;
+    overflow-y: scroll;
 }
 
-.night{
-    position: absolute; 
+.night {
+    position: absolute;
     width: 100%;
     height: 100%;
     transform: rotateZ(40deg);
     align-items: center;
 }
 
-.sidebar.active ~ .home_content{
+.sidebar.active~.home_content {
     width: calc(100% - 240px);
     left: 240px;
 }
 
 .collapsible {
-  background-color: rgb(30, 30, 30);
-  color: red;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 20px;
-  font-weight: lighter;
+    background-color: rgb(30, 30, 30);
+    color: red;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 .collapsible:after {
-  content: '\002B';
-  color: red;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+    content: '\002B';
+    color: red;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
 }
 
 .active:after {
-  content: "\2212";
+    content: "\2212";
 }
 
 .content {
-  padding: 0 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.links{
-  color: white;
-  text-decoration:none
+.links {
+    color: white;
+    text-decoration: none
 }
 
 .home_content .text {
-    color: black; 
-    overflow:scroll; 
-    overflow-y:scroll; 
-    overflow-x:hidden;
+    color: black;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
-ol{
-    color: rgb(255,165,0);
+ol {
+    color: rgb(255, 165, 0);
 }
 
 .assigment {
-    position:fixed;
+    position: fixed;
     background-color: #002a52;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     padding: 10px 10px;
-    width:100%;
+    width: 100%;
 }
 
 .write {
     margin-top: 50px;
     margin-left: 15px;
+}
+
+.flip-card {
+    float: left;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.flip-card h1 {
+    margin-top: 20px;
+}
+
+.flip-card-inner {
+    font-size: medium;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #002a52;
+    color: white;
+    transform: rotateY(180deg);
 }
