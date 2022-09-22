@@ -250,9 +250,9 @@ ol {
     margin-left: 15px;
 }
 
-.home_content .text .projectTitle {
+.home_content .text .project-title {
     margin-top:15px; 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 20px;
     text-align: center;
     text-decoration: underline;
