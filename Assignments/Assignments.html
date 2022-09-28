@@ -63,38 +63,42 @@
                 <h1 style="color: #002a52"> Assignments </h1>
                 <ul class="nav_list">
                     <li>
-                        <span class="caret"><i class='bx bx-file'></i> Tiago Henriques </span>
+                        <span class="caret"> Tiago Henriques </span>
                         <ul class="nested">
                             <li>
-                                <a href="Tiago/Assigment1.html" style="text-decoration:none; color: #000;">Assigment
-                                    1</a>
+                                <a href="Tiago/Assigment1.html" style="text-decoration:none; color: #000;">
+                                    <i class='bx bx-subdirectory-right'> Assigment 1 </i>
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <span class="caret"><i class='bx bx-file'></i> Ricardo Romão </span>
+                        <span class="caret"> Ricardo Romão </span>
                         <ul class="nested">
                             <li>
-                                <a href="Ricardo/Assigment1.html" style="text-decoration:none; color: #000;">Assigment
-                                    1</a>
+                                <a href="Ricardo/Assigment1.html" style="text-decoration:none; color: #000;">
+                                    <i class='bx bx-subdirectory-right'> Assigment 1 </i>
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <span class="caret"><i class='bx bx-file'></i> Jaime Saramago </span>
+                        <span class="caret"> Jaime Saramago </span>
                         <ul class="nested">
                             <li>
-                                <a href="Jaime/Assigment1.html" style="text-decoration:none; color: #000;">Assigment
-                                    1</a>
+                                <a href="Jaime/Assigment1.html" style="text-decoration:none; color: #000;">
+                                    <i class='bx bx-subdirectory-right'> Assigment 1 </i>
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <span class="caret"><i class='bx bx-file'></i> David Delgadinho </span>
+                        <span class="caret"> David Delgadinho </span>
                         <ul class="nested">
                             <li>
-                                <a href="David/Assigment1.html" style="text-decoration:none; color: #000;">Assigment
-                                    1</a>
+                                <a href="David/" style="text-decoration:none; color: #000;">
+                                    <i class='bx bx-subdirectory-right'> Assigment 1 </i>
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -116,10 +120,8 @@
         }
 
         // tree structure
-
         var toggler = document.getElementsByClassName("caret");
-        var i;
-        for (i = 0; i < toggler.length; i++) {
+        for (var i = 0; i < toggler.length; i++) {
             toggler[i].addEventListener("click", function () {
                 this.parentElement.querySelector(".nested").classList.toggle("active");
                 this.classList.toggle("caret-down");

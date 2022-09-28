@@ -14,10 +14,6 @@ body {
     color: black;
 }
 
-#partnerimages a:hover {
-    text-decoration: none !important;
-}
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -115,7 +111,6 @@ body {
 .sidebar ul li .bx-search:active {
     background: #fff;
     color: #103E81;
-
 }
 
 .sidebar ul li a {
@@ -234,7 +229,7 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 ol {
@@ -255,11 +250,11 @@ ol {
 }
 
 .home_content .text .project-title {
-    margin-top: 15px;
-    margin-bottom: 30px;
+    padding: 15px 15px;
     font-size: 20px;
     text-align: center;
     text-decoration: underline;
+    border-radius: 6px;
 }
 
 .flip-card {
@@ -327,43 +322,52 @@ ol {
 }
 
 .home_content .text .nav_list {
-    color: rgb(30, 30, 30);
     margin-left: 30px;
     font-size: 25px;
     list-style: none;
-    text-decoration: none
+    text-decoration: none;
+}
+
+.home_content .text .nav_list .caret:hover {
+    padding: 5px 5px;
+    color: #002a52;
+    background-color: rgb(193, 193, 193);
+    border-radius: 10px;
 }
 
 .home_content .text .nav_list .caret {
     cursor: pointer;
-    -webkit-user-select: none;
-    /* Safari 3.1+ */
-    -moz-user-select: none;
-    /* Firefox 2+ */
-    -ms-user-select: none;
-    /* IE 10+ */
     user-select: none;
+    display: flex;
+    align-items: center;
 }
 
 .home_content .text .nav_list .caret::before {
-    content: "\25B6";
-    color: black;
+    content: url(./Fotos/folder-plus-regular-24.png);
     display: inline-block;
     margin-right: 6px;
 }
 
 .home_content .text .nav_list .caret-down::before {
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(90deg);
-    /* Safari */
-    transform: rotate(90deg);
+    content: url(./Fotos/folder-minus-regular-24.png);
 }
 
 .home_content .text .nav_list .nested {
     display: none;
 }
 
+.home_content .text .nav_list .nested i:hover {
+    color: #56aaff;
+    font-family: "Poppins", sans-serif;
+}
+
 .home_content .text .nav_list .active {
     display: block;
+}
+
+.home_content .text .nav_list a .report:hover {
+    padding: 5px 5px;
+    color: #002a52;
+    background-color: rgb(193, 193, 193);
+    border-radius: 10px;
 }
