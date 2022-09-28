@@ -14,6 +14,12 @@ body {
     color: black;
 }
 
+.pictures {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -237,7 +243,7 @@ ol {
 }
 
 .assigment {
-    position: fixed;
+    /*  position: fixed; */
     background-color: #002a52;
     color: #FFFFFF;
     padding: 10px 10px;
