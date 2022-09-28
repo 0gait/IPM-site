@@ -14,6 +14,12 @@ body {
     color: black;
 }
 
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
 .pictures {
     width: 250px;
     height: 250px;
