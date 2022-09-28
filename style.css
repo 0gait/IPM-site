@@ -337,7 +337,7 @@ ol {
 .home_content .text .nav_list .caret:hover {
     padding: 5px 5px;
     color: #002a52;
-    background-color: rgb(193, 193, 193);
+    background-color: rgb(157, 157, 157);
     border-radius: 10px;
 }
 
@@ -363,8 +363,8 @@ ol {
 }
 
 .home_content .text .nav_list .nested i:hover {
-    color: #56aaff;
-    font-family: "Poppins", sans-serif;
+    color: #29a2e49c;
+    font-weight: bold;
 }
 
 .home_content .text .nav_list .active {
