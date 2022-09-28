@@ -248,7 +248,7 @@ ol {
 }
 
 .assigment {
-    position: fixed;
+   /*  position: fixed; */
     background-color: #002a52;
     color: #FFFFFF;
     padding: 10px 10px;
