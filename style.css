@@ -18,6 +18,13 @@ body {
     text-decoration: none !important;
 }
 
+.pictures{
+    width:250px;
+    height:250px;
+    object-fit: cover;
+    
+}
+
 .sidebar {
     position: fixed;
     top: 0;
